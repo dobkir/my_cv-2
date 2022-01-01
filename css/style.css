@@ -1,0 +1,13 @@
+:root {
+  font-size: 1em;
+}
+
+.body {
+  background-color: var(--neutral-color);
+}
+
+h1,
+h2,
+p {
+  color: var(--light-color);
+}
