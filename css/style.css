@@ -8,6 +8,105 @@
 
 h1,
 h2,
+h3,
+h4 {
+  margin: 0;
+}
+
 p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a:hover,
+a:focus {
+  outline: 1px dashed;
+  opacity: 0.7;
+}
+
+.pl {
+  padding-left: 2.2rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 46.87rem;
+  max-height: 62.5rem;
+  margin: auto;
+
+  background-color: var(--light-color);
+  outline: 1px solid rgba(193, 210, 214, 0.5);
+}
+
+/*==================== Header ====================*/
+
+.header {
+  display: flex;
+  height: 13.44rem;
+
+  background: url(../img/backgrounds/header_main_bg.png) 100% 0% no-repeat;
+}
+
+.header__avatar {
+  width: 192px;
+  height: 215px;
+
+  background: url(../img/backgrounds/avatar-section_bg.png) 0% 0% no-repeat;
+}
+
+.avatar {
+  width: 282px;
+  height: 208px;
+  margin: 1.75rem 0 0 0.56rem;
+
+  background: url(../img/backgrounds/avatar_bg.png) 50% 50% no-repeat;
+}
+
+.avatar > img {
+  margin: 0.44rem 1.76rem;
+}
+
+.header__info {
+  position: relative;
+
+  margin: 0 0 0 auto;
+
+  background: url(../img/backgrounds/header__info_bg.png) 100% 0% no-repeat;
+}
+
+.header__greeting {
+  width: 219px;
+  height: 164px;
+  margin: 24px 192px auto auto;
+}
+
+.header__title {
+  margin-left: 1.125rem;
+  
+  font: normal 600 3.25rem/3.55rem "MontserratBold";
+  color: var(--light-color);
+  text-transform: uppercase;
+}
+
+.header__title_surname {
+  font: normal 400 2.37rem/2.75rem "MontserratRegular";
+}
+
+.header__subtitle {
+  font: normal 400 1.25rem/1.5rem "MontserratRegular";
   color: var(--light-color);
 }
+
+.header__logo {
+  position: relative;
+  bottom: 106px;
+}
+
+/*================= End of Header ================*/
