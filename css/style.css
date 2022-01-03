@@ -9,18 +9,19 @@
 h1,
 h2,
 h3,
-h4 {
+h4,
+p,
+ul,
+pre {
   margin: 0;
 }
 
-p {
-  margin: 0;
+p,
+ul {
   padding: 0;
 }
 
 ul {
-  margin: 0;
-  padding: 0;
   list-style: none;
 }
 
@@ -50,23 +51,30 @@ a:focus {
 .header {
   display: flex;
   height: 13.44rem;
+  margin-bottom: 0.37rem;
+
+  color: var(--light-color);
 
   background: url(../img/backgrounds/header_main_bg.png) 100% 0% no-repeat;
 }
 
 .header__avatar {
-  width: 192px;
-  height: 215px;
+  width: 12rem;
+  height: 13.44rem;
 
   background: url(../img/backgrounds/avatar-section_bg.png) 0% 0% no-repeat;
 }
 
 .avatar {
-  width: 282px;
-  height: 208px;
+  position: relative;
+
+  width: 17.62rem;
+  height: 13rem;
   margin: 1.75rem 0 0 0.56rem;
 
   background: url(../img/backgrounds/avatar_bg.png) 50% 50% no-repeat;
+
+  z-index: 1;
 }
 
 .avatar > img {
@@ -82,16 +90,15 @@ a:focus {
 }
 
 .header__greeting {
-  width: 219px;
-  height: 164px;
-  margin: 24px 192px auto auto;
+  width: 13.69rem;
+  height: 10.25rem;
+  margin: 1.5rem 12rem auto auto;
 }
 
 .header__title {
   margin-left: 1.125rem;
-  
+
   font: normal 600 3.25rem/3.55rem "MontserratBold";
-  color: var(--light-color);
   text-transform: uppercase;
 }
 
@@ -101,12 +108,162 @@ a:focus {
 
 .header__subtitle {
   font: normal 400 1.25rem/1.5rem "MontserratRegular";
-  color: var(--light-color);
 }
 
 .header__logo {
   position: relative;
-  bottom: 106px;
+  bottom: 6.62rem;
 }
 
 /*================= End of Header ================*/
+
+
+
+/*===================== Aside ====================*/
+
+.aside {
+  width: 18.56rem;
+  height: auto;
+
+  color: var(--light-color);
+
+  background: url(../img/backgrounds/aside_bg.png) 0% 0% no-repeat;
+}
+
+.aside__aboutme-section,
+.aside__languages,
+.aside__skills {
+  background: url(../img/backgrounds/aside__section_bg.png) 50% 7% no-repeat;
+}
+
+.aside__section-title {
+  font: var(--aside-title-font);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.aside__section-text {
+  margin: 0.56rem 1rem 0;
+
+  font: var(--aside-text-font);
+  text-align: justify;
+}
+
+.aside__aboutme-section {
+  height: 7.5rem;
+  margin-top: 3rem;
+
+  overflow: hidden;
+}
+
+.aside__languages {
+  height: 8.12rem;
+  margin-top: 0.5rem;
+}
+
+.aside__languages-list {
+  display: flex;
+  justify-content: space-around;
+  margin: 1.2rem 1.6rem 0;
+}
+
+.languages__item {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 5.44rem;
+
+  font: normal 400 1rem/1.12rem "MontserratRegular";
+}
+
+.languages__item_score {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  width: 50%;
+  height: 58%;
+  margin: auto;
+}
+
+.languages__item_name {
+  margin-top: 0.9rem;
+}
+
+.aside__skills {
+  height: 10.5rem;
+  margin-top: 0.5rem;
+}
+
+.aside__skills-list {
+  margin: 1rem 2.06rem 1.94rem;
+}
+
+.skills__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.8rem;
+
+  font: var(--aside-subtitle-font);
+}
+
+.code-instance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 14.94rem;
+  height: 12.94rem;
+  margin: 0 auto;
+}
+
+.code-instance:before {
+    content: "";
+    position: absolute;
+    width: inherit;
+    height: inherit;
+
+    background: url(../img/backgrounds/code_instance_bg.png);
+    background-size: cover;
+    filter: blur(32px);
+}
+
+.code-instance > pre {
+  margin: 0 1.87rem -1.87rem 0;
+}
+
+.code-instance-title,
+.code-instance-description,
+.code-instance-text {
+  position: relative;
+  z-index: 1;
+
+  text-align: center;
+}
+
+.code-instance-title {
+  margin-bottom: 0.62rem;
+
+  font: var(--aside-title-font);
+  color: var(--dark-color);
+}
+
+.code-instance-description {
+  font: var(--aside-subtitle-font);
+  color: var(--dark-color);
+}
+
+.code-instance-text {
+  font: normal 700 1rem/1.12rem "MontserratRegular";
+}
+
+.github__pure-link {
+  text-decoration: underline dotted;
+}
+
+/*================== End of Aside =================*/
