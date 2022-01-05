@@ -46,7 +46,7 @@ a:focus {
 
   max-width: 46.87rem;
   max-height: 62.2rem;
-  margin: auto;
+  margin: 0 auto;
 
   background-color: var(--light-color);
 }
@@ -311,7 +311,7 @@ a:focus {
   font: var(--main-text-bold-font);
 }
 
-.main__section--text {
+.main__section-text {
   font: var(--main-text-medium-font);
 }
 
@@ -415,3 +415,13 @@ a:focus {
 }
 
 /*================= End of Footer ================*/
+
+
+@media (max-width: 768px) {
+
+  .body {
+  background-color: var(--light-color);
+}
+
+}
+
