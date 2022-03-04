@@ -31,7 +31,7 @@ Pure template on html5/css3. It was created without a task runner, without a fra
 ![Main language][main-language-shield]
 
 - Others<br>
-![CSS3](https://img.shields.io/badge/CSS3-41.1%25-563d7c?logo=CSS3&logoColor=fafafa&style=for-the-badge)
+![CSS3](https://img.shields.io/badge/CSS3-41.5%25-563d7c?logo=CSS3&logoColor=fafafa&style=for-the-badge)
 
 - IDE<br>
 ![VSCode](https://img.icons8.com/color/48/000000/visual-studio-code-2019.png)<br>
